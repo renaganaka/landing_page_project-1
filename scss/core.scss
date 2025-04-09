@@ -1,3 +1,5 @@
+@use '_vars' as var;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +11,8 @@ html {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    color: var.$black;
+    font-size: 18px;
 }
 
 ul,
@@ -28,4 +31,33 @@ button {
 .container {
     max-width: 1480px;
     margin: 0 auto;
+}
+
+.btnH60 {
+    height: 60px;
+    padding: 0 24px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.yellowBtn {
+    background-color: var.$yellow;
+}
+
+.blueBtn {
+    background-color: var.$lightBlue;
+    color: var.$white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: var.$white;
+        mask: url("../images/Right-arrow-Icon.svg") no-repeat center;
+        mask-size: cover;
+    }
 }

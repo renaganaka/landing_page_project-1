@@ -10,7 +10,8 @@ html {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  color: #212529;
+  font-size: 18px;
 }
 
 ul,
@@ -29,4 +30,41 @@ button {
 .container {
   max-width: 1480px;
   margin: 0 auto;
+}
+
+.btnH60 {
+  height: 60px;
+  padding: 0 24px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.yellowBtn {
+  background-color: #FFE492;
+}
+
+.blueBtn {
+  background-color: #4F9CF9;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blueBtn .icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  -webkit-mask: url("../images/Right-arrow-Icon.svg") no-repeat center;
+          mask: url("../images/Right-arrow-Icon.svg") no-repeat center;
+  -webkit-mask-size: cover;
+          mask-size: cover;
 }
