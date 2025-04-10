@@ -41,8 +41,24 @@ button {
   font-weight: 500;
 }
 
+.btnH51 {
+  height: 51px;
+  padding: 0 40px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 500;
+  max-width: 166px;
+  font-size: 16px;
+}
+
 .yellowBtn {
   background-color: #FFE492;
+}
+
+.whiteBtn {
+  background-color: #FFFFFF;
+  border: 1px solid #FFE492;
+  border-radius: 8px;
 }
 
 .blueBtn {
@@ -67,4 +83,20 @@ button {
           mask: url("../images/Right-arrow-Icon.svg") no-repeat center;
   -webkit-mask-size: cover;
           mask-size: cover;
+}
+
+h2 {
+  font-size: 72px;
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 64px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+
+p {
+  line-height: 30px;
+  letter-spacing: -2%;
 }
