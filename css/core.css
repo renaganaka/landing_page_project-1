@@ -30,6 +30,10 @@ button {
   cursor: pointer;
 }
 
+.mobile {
+  display: none;
+}
+
 .container {
   max-width: 1480px;
   margin: 0 auto;
@@ -110,4 +114,33 @@ h1 {
 p {
   line-height: 30px;
   letter-spacing: -2%;
+}
+
+@media screen and (max-width: 780px) {
+  .container {
+    max-width: 290px;
+    text-align: center;
+  }
+  .container .desktop {
+    display: none;
+  }
+  .container .menu-mobile {
+    display: block;
+    height: 42px;
+    width: 42px;
+    background-image: url("../images/Hum-menu.svg");
+    background-repeat: no-repeat;
+    background-size: 42px;
+    background-position: center;
+  }
+  .container button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1, h2 {
+    font-size: 36px;
+  }
+}
+.item-mob {
+  display: none;
 }
