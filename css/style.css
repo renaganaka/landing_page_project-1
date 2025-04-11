@@ -334,7 +334,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 25px;
-  border: 1px solid #FFE492;
+  border: 1px solid #fae3ba;
   border-radius: 10px;
   padding: 0 44px;
   -webkit-transition: 0.5s;
@@ -348,18 +348,23 @@
   background-color: #043873;
 }
 .pricing__item:hover h3, .pricing__item:hover .cost {
-  color: #FFE492;
+  color: #fae3ba;
 }
 .pricing__item:hover li, .pricing__item:hover .para {
   color: #FFFFFF;
 }
 .pricing__item:hover li span {
-  background-color: #FFE492;
+  background-color: #fae3ba;
 }
 .pricing__item:hover button {
   background-color: #4F9CF9;
   border: none;
   color: #FFFFFF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.pricing__item:hover button:hover {
+  background-color: #84b3f1;
 }
 .pricing__item h3 {
   font-size: 24px;
@@ -582,4 +587,395 @@
 .sponsors__item .google {
   width: 211px;
   background-image: url("../images/Google-icon.svg");
+}
+
+.apps {
+  padding: 140px 0;
+  background-color: #043873;
+  background-image: url("../images/apps-background.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.apps__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.appsLeft {
+  position: relative;
+  background-image: url("../images/Apps-background2.webp");
+  width: 582px;
+  height: 472px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.appsLeft span {
+  display: inline-block;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.appsLeft .gmail {
+  background-image: url("../images/gmail.svg");
+  top: 2%;
+  left: 45%;
+}
+.appsLeft .outlook {
+  background-image: url("../images/outlook.svg");
+  top: 62%;
+  left: 2%;
+}
+.appsLeft .logo {
+  background-image: url("../images/Logo-Icon.svg");
+  top: 54%;
+  left: 45.5%;
+}
+.appsLeft .google-disk {
+  background-image: url("../images/google-drive.svg");
+  top: 61%;
+  left: 89.5%;
+}
+.appsLeft .calendar {
+  background-image: url("../images/google-calendar.svg");
+  top: 83%;
+  left: 46%;
+}
+.appsLeft .slack {
+  background-image: url("../images/slack.svg");
+  top: 34%;
+  left: 69.5%;
+}
+.appsLeft .dropbox {
+  background-image: url("../images/dropbox.svg");
+  top: 34%;
+  left: 19.5%;
+}
+.appsRight {
+  max-width: 798px;
+  color: #FFFFFF;
+}
+.appsRight p {
+  margin-bottom: 60px;
+}
+
+.testimonial {
+  padding: 140px 0;
+}
+.testimonial__inner {
+  text-align: center;
+}
+.testimonial__inner .list {
+  display: block;
+  width: 60px;
+  height: 12px;
+  background-image: url("../images/Slider.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+.testimonial__inner .heading {
+  position: relative;
+  margin-bottom: 60px;
+}
+.testimonial__inner .heading span {
+  display: inline-block;
+  position: absolute;
+  width: 258px;
+  height: 48px;
+  background-image: url("../images/says-element.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+  top: 30px;
+  right: 304px;
+}
+.testimonial__items {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+.testimonial__item {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #4F9CF9;
+  border-radius: 10px;
+  padding: 60px 40px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 472px;
+          flex: 0 0 472px;
+}
+.testimonial__item:nth-child(2) .infoLeft {
+  background-image: url("../images/avatar-2.svg");
+}
+.testimonial__item:nth-child(3) .infoLeft {
+  background-image: url("../images/avatar-3.svg");
+}
+.testimonial__item:hover {
+  -webkit-box-shadow: 15px 10px 50px 0 rgba(0, 0, 0, 0.1019607843);
+          box-shadow: 15px 10px 50px 0 rgba(0, 0, 0, 0.1019607843);
+  background-color: #FFFFFF;
+}
+.testimonial__item:hover p {
+  color: #212529;
+}
+.testimonial__item:hover > p {
+  border-color: #212529;
+}
+.testimonial__item:hover .icon {
+  background-color: #043873;
+}
+.testimonial__item p {
+  color: #FFFFFF;
+  letter-spacing: -2%;
+}
+.testimonial__item > p {
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 40px;
+  margin-bottom: 60px;
+}
+.testimonial__item .icon {
+  display: block;
+  width: 86px;
+  height: 62px;
+  background-color: #FFFFFF;
+  -webkit-mask: url("../images/Quote.svg") no-repeat center;
+          mask: url("../images/Quote.svg") no-repeat center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  margin-bottom: 32px;
+}
+.testimonial__item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 42px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.testimonial__item .infoLeft {
+  width: 95px;
+  height: 95px;
+  background-image: url("../images/avatar-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.testimonial__item .infoRight h3 {
+  color: #043873;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.testimonial__item .infoRight p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.free-trial {
+  background-color: #043873;
+  padding: 140px 0;
+  color: #FFFFFF;
+  text-align: center;
+}
+.free-trial__inner h2 {
+  max-width: 602px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+.free-trial__inner > p {
+  max-width: 550px;
+  margin: 0 auto;
+}
+.free-trial__inner p {
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+.free-trial__inner button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.free-trial__inner .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+.free-trial__inner .logos span {
+  width: 60px;
+  height: 60px;
+  background-color: #FFFFFF;
+}
+.free-trial__inner .logos .apple {
+  -webkit-mask: url("../images/apple-black-logo.svg") no-repeat center;
+          mask: url("../images/apple-black-logo.svg") no-repeat center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.free-trial__inner .logos .windows {
+  -webkit-mask: url("../images/windows-logo.svg") no-repeat center;
+          mask: url("../images/windows-logo.svg") no-repeat center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.free-trial__inner .logos .android {
+  -webkit-mask: url("../images/android-logo.svg") no-repeat center;
+          mask: url("../images/android-logo.svg") no-repeat center;
+  -webkit-mask-size: cover;
+          mask-size: cover;
+}
+
+.footer {
+  background-color: #043873;
+  color: #FFFFFF;
+}
+.footer a {
+  color: #FFFFFF;
+}
+.footerTop {
+  padding-top: 140px;
+  padding-bottom: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footerTop .subtitle p {
+  max-width: 240px;
+}
+.footerTop .subtitle span {
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 191px;
+  height: 34px;
+  background-image: url("../images/Logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footerTop ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.footerTop .tryIt p {
+  max-width: 259px;
+  margin-bottom: 23px;
+}
+.footerTop .tryIt h5 {
+  font-size: 28px;
+  margin-bottom: 23px;
+}
+.footerBottom {
+  padding: 32px 0;
+  border-top: 1px solid #2E4E73;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footerBottom .info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+}
+.footerBottom .info .language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+}
+.footerBottom .info .language a {
+  padding-right: 40px;
+  background-image: url("../images/Down-Arrow-white.svg");
+  background-repeat: no-repeat;
+  background-size: 48px;
+  background-position: right center;
+}
+.footerBottom .info .language .icon {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-color: #FFFFFF;
+  -webkit-mask: url("../images/Group.svg") no-repeat center;
+          mask: url("../images/Group.svg") no-repeat center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.footer .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+.footer .icons a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #FFFFFF;
+}
+.footer .icons a:hover {
+  background-color: #fae3ba;
+}
+.footer .icons .fc {
+  -webkit-mask: url("../images/Facebook.svg") no-repeat center;
+          mask: url("../images/Facebook.svg") no-repeat center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.footer .icons .tw {
+  -webkit-mask: url("../images/Twitter.svg") no-repeat center;
+          mask: url("../images/Twitter.svg") no-repeat center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+.footer .icons .ln {
+  -webkit-mask: url("../images/LinkedIn.svg") no-repeat center;
+          mask: url("../images/LinkedIn.svg") no-repeat center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
 }

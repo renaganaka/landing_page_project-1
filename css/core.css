@@ -22,6 +22,9 @@ ol {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: #fae3ba;
+}
 
 button {
   cursor: pointer;
@@ -52,12 +55,15 @@ button {
 }
 
 .yellowBtn {
-  background-color: #FFE492;
+  background-color: #fae3ba;
+}
+.yellowBtn:hover {
+  background-color: #fbf8d3;
 }
 
 .whiteBtn {
   background-color: #FFFFFF;
-  border: 1px solid #FFE492;
+  border: 1px solid #fae3ba;
   border-radius: 8px;
 }
 
@@ -73,6 +79,8 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 .blueBtn .icon {
   display: inline-block;
@@ -83,6 +91,9 @@ button {
           mask: url("../images/Right-arrow-Icon.svg") no-repeat center;
   -webkit-mask-size: cover;
           mask-size: cover;
+}
+.blueBtn:hover {
+  background-color: #84b3f1;
 }
 
 h2 {

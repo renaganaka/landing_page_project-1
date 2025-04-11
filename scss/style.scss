@@ -302,6 +302,10 @@
                 background-color: var.$lightBlue;
                 border: none;
                 color: var.$white;
+                transition: 0.5s;
+                &:hover {
+                    background-color: #84b3f1;
+                }
             }
         }
         h3 {
@@ -497,6 +501,343 @@
         .google {
             width: 211px;
             background-image: url("../images/Google-icon.svg");
+        }
+    }
+}
+.apps {
+    padding: 140px 0;
+    background-color: var.$blue;
+    background-image: url("../images/apps-background.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &Left {
+        position: relative;
+        background-image: url("../images/Apps-background2.webp");
+        width: 582px;
+        height: 472px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        span {
+            display: inline-block;
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .gmail {
+            background-image: url("../images/gmail.svg");
+            top: 2%;
+            left: 45%;
+        }
+        .outlook {
+            background-image: url("../images/outlook.svg");
+            top: 62%;
+            left: 2%;
+        }
+        .logo {
+            background-image: url("../images/Logo-Icon.svg");
+            top: 54%;
+            left: 45.5%;
+        }
+        .google-disk {
+            background-image: url("../images/google-drive.svg");
+            top: 61%;
+            left: 89.5%;
+        }
+        .calendar {
+            background-image: url("../images/google-calendar.svg");
+            top: 83%;
+            left: 46%;
+        }
+        .slack {
+            background-image: url("../images/slack.svg");
+            top: 34%;
+            left: 69.5%;
+        }
+        .dropbox {
+            background-image: url("../images/dropbox.svg");
+            top: 34%;
+            left: 19.5%;
+        }
+    }
+    &Right {
+        max-width: 798px;
+        color: var.$white;
+        p {
+            margin-bottom: 60px;
+        }
+    }
+}
+.testimonial {
+    padding: 140px 0;
+    &__inner {
+        text-align: center;
+        .list {
+            display: block;
+            width: 60px;
+            height: 12px;
+            background-image: url("../images/Slider.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+        }
+        .heading {
+            position: relative;
+            margin-bottom: 60px;
+            span {
+                display: inline-block;
+                position: absolute;
+                width: 258px;
+                height: 48px;
+                background-image: url("../images/says-element.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                z-index: -1;
+                top: 30px;
+                right: 304px;
+            }
+        }
+    }
+    &__items {
+        margin-bottom: 60px;
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        text-align: left;
+    }
+    &__item {
+        &:nth-child(2) {
+            .infoLeft {
+                background-image: url("../images/avatar-2.svg");
+            }
+        }
+        &:nth-child(3) {
+            .infoLeft {
+                background-image: url("../images/avatar-3.svg");
+            }
+        }
+        transition: 0.5s;
+        &:hover {
+            box-shadow: 15px 10px 50px 0 #0000001A;
+            background-color: var.$white;
+            p {
+                color: var.$black;
+            }
+            > p {
+                border-color: var.$black;
+            }
+            .icon {
+                background-color: var.$blue;
+            }
+        }
+        background-color: var.$lightBlue;
+        border-radius: 10px;
+        padding: 60px 40px;
+        flex: 0 0 472px;
+        p {
+            color: var.$white;
+            letter-spacing: -2%;
+        }
+        > p {
+            border-bottom: 1px solid var.$white;
+            padding-bottom: 40px;
+            margin-bottom: 60px;
+        }
+        .icon {
+            display: block;
+            width: 86px;
+            height: 62px;
+            background-color: var.$white;
+            mask: url("../images/Quote.svg") no-repeat center;
+            mask-size: contain;
+            margin-bottom: 32px;
+        }
+        .info {
+            display: flex;
+            gap: 42px;
+            align-items: center;
+            &Left {
+                width: 95px;
+                height: 95px;
+                background-image: url("../images/avatar-1.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                flex-shrink: 0;
+            }
+            &Right {
+                h3 {
+                    color: var.$blue;
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+.free-trial {
+    background-color: var.$blue;
+    padding: 140px 0;
+    color: var.$white;
+    text-align: center;
+    &__inner {
+        h2 {
+            max-width: 602px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 24px;
+        }
+        > p {
+            max-width: 550px;
+            margin: 0 auto;
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 60px;
+        }
+        button {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+        }
+        .logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            span {
+                width: 60px;
+                height: 60px;
+                background-color: var.$white;
+            }
+            .apple {
+                mask: url("../images/apple-black-logo.svg") no-repeat center;
+                mask-size: contain;
+            }
+            .windows {
+                mask: url("../images/windows-logo.svg")  no-repeat center;
+                mask-size: contain;
+            }
+            .android {
+                mask: url("../images/android-logo.svg")  no-repeat center;
+                mask-size: cover;
+            }
+        }
+    }
+}
+.footer {
+    background-color: var.$blue;
+    color: var.$white;
+    a {
+        color: var.$white;
+    }
+    &__inner {
+    }
+    &Top {
+        padding-top: 140px;
+        padding-bottom: 65px;
+        display: flex;
+        justify-content: space-between;
+        .subtitle {
+            p {
+                max-width: 240px;
+            }
+            span {
+                margin-bottom: 15px;
+                display: inline-block;
+                width: 191px;
+                height: 34px;
+                background-image: url("../images/Logo.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .tryIt {
+            p {
+                max-width: 259px;
+                margin-bottom: 23px;
+            }
+            h5 {
+                font-size: 28px;
+                margin-bottom: 23px;
+            }
+        }
+    }
+    &Bottom {
+        padding: 32px 0;
+        border-top: 1px solid #2E4E73;
+        display: flex;
+        justify-content: space-between;
+        .info {
+            align-items: center;
+            display: flex;
+            gap: 60px;
+             .language {
+                 display: flex;
+                 align-items: center;
+                 gap: 6px;
+                 a {
+                     padding-right: 40px;
+                     background-image: url("../images/Down-Arrow-white.svg");
+                     background-repeat: no-repeat;
+                     background-size: 48px;
+                     background-position: right center;
+                 }
+                 .icon {
+                     display: inline-block;
+                     width: 19px;
+                     height: 19px;
+                     background-color: var.$white;
+                     mask: url("../images/Group.svg") no-repeat center;
+                     mask-size: contain;
+                 }
+             }
+        }
+    }
+    .icons {
+        display: flex;
+        gap: 32px;
+        a {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-color: var.$white;
+            &:hover {
+                background-color: var.$yellow;
+            }
+        }
+        .fc {
+            mask: url("../images/Facebook.svg") no-repeat center;
+            mask-size: contain;
+        }
+        .tw {
+            mask: url("../images/Twitter.svg") no-repeat center;
+            mask-size: contain;
+        }
+        .ln {
+            mask: url("../images/LinkedIn.svg") no-repeat center;
+            mask-size: contain;
         }
     }
 }

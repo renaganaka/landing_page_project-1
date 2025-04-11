@@ -22,6 +22,9 @@ ol {
 
 a {
     text-decoration: none;
+    &:hover {
+        color: var.$yellow;
+    }
 }
 
 button {
@@ -54,6 +57,9 @@ button {
 
 .yellowBtn {
     background-color: var.$yellow;
+    &:hover {
+        background-color: #fbf8d3;
+    }
 }
 
 .whiteBtn {
@@ -68,6 +74,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
     .icon {
         display: inline-block;
         width: 40px;
@@ -75,6 +82,9 @@ button {
         background-color: var.$white;
         mask: url("../images/Right-arrow-Icon.svg") no-repeat center;
         mask-size: cover;
+    }
+    &:hover {
+        background-color: #84b3f1;
     }
 }
 
