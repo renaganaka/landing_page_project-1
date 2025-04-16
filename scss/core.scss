@@ -30,7 +30,12 @@ a {
 button {
     cursor: pointer;
 }
+
 .mobile {
+    display: none;
+}
+
+.menu-mobile {
     display: none;
 }
 .container {

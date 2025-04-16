@@ -34,6 +34,10 @@ button {
   display: none;
 }
 
+.menu-mobile {
+  display: none;
+}
+
 .container {
   max-width: 1480px;
   margin: 0 auto;
